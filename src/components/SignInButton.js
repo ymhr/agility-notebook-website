@@ -1,30 +1,20 @@
 import React, {Component} from 'react';
+import {Button, Icon} from 'semantic-ui-react';
 
 export default class SignInButton extends Component {
 
+    goToAppLogin = () => window.location.href = 'https://app.agilitynotebook.com';
+
     render(){
 
-        const styles = {
-            "background-color": "blue",
-            "border-radius": "3px",
-            "color": "white",
-            "fontFamily": "sans-serif",
-            "border": "0",
-            "padding": "5px 10px",
-            "text-decoration": "none"
-        }
+        let styles = {};
 
         if(this.props.float){
             styles["float"] = this.props.float || "right";
         }
 
         return (
-            <a
-                style={styles}
-                href="https://api.agilitynotebook.com/auth/facebook"
-            >
-                Log in with Facebook
-            </a>
+            <Button primary style={styles} onClick={this.goToAppLogin}><Icon name="facebook" />Sign in with Facebook</Button>
         );
     }
 

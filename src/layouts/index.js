@@ -15,11 +15,7 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
-          meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
-          ]}
+          title="Agility Notebook"
         />
         <div
           style={{
@@ -37,7 +33,7 @@ export default class Template extends React.Component {
           >
             <SignInButton float="right" />
           
-            <h1 style={{ margin: 0 }}>
+            <h1 style={{ margin: 0, "font-size": 30 }}>
               <Link
                 to="/"
                 style={{

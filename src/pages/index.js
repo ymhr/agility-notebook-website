@@ -3,6 +3,7 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import SignInButton from "../components/SignInButton"
 import "../css/typography.css"
+import 'semantic-ui-css/semantic.min.css'
 
 export default class Index extends React.Component {
   render() {
