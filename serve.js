@@ -6,7 +6,7 @@ const indexPath = path.join(__dirname, './public/index.html');
 const publicPath = express.static(path.join(__dirname, '/public/'));
 
 app.use(publicPath);
-// app.use('/', function(_, res){res.sendFile(indexPath)});
+app.use('/', function(_, res){res.sendFile(indexPath)});
 
 const port = process.env.PORT || 8080;
 app.listen(port);
