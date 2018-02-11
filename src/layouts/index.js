@@ -17,6 +17,7 @@ export default class Template extends React.Component {
         <Helmet
           title="Agility Notebook"
         />
+        <h1>test</h1>
         <div
           style={{
             background: `#ccc`,
@@ -32,7 +33,7 @@ export default class Template extends React.Component {
             }}
           >
             <SignInButton float="right" />
-          
+
             <h1 style={{ margin: 0, "font-size": 30 }}>
               <Link
                 to="/"
