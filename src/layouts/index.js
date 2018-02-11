@@ -17,7 +17,6 @@ export default class Template extends React.Component {
         <Helmet
           title="Agility Notebook"
         />
-        <h1>test</h1>
         <div
           style={{
             background: `#ccc`,
